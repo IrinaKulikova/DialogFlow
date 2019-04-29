@@ -1,0 +1,9 @@
+<h2>Кабинет специалиста</h2>
+
+@{
+    var admin = User.IsInRole("Admin");
+    var user = User.IsInRole("User");
+}
+
+<p>is admin - @admin</p>
+<p>is user - @user</p>

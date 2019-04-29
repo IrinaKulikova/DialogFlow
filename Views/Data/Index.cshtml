@@ -1,0 +1,30 @@
+﻿@model DataDTO
+@using System.Collections.Generic;
+@using WebDialog.DTO;
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<table>
+<tr>
+    <th>Id</th>
+    <th>Parameter</th>
+</tr>
+
+@foreach(var c in Model.Datas)
+{
+    <tr>
+        <td>@c.Id</td>
+        <td>@c.SomeParameter</td>
+    </tr>
+}
+
+</table>
+
+<iframe style="float:rigth"
+    allow="microphone;"
+    width="350"
+    height="430"
+    src= @Model.SRC>
+</iframe> 
